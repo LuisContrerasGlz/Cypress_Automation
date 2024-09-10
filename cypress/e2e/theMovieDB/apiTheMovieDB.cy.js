@@ -20,7 +20,7 @@ describe('API with Cypress', () => {
     
     // Define los encabezados que incluyen la autorización con un token Bearer
     const headers = {
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNzhjZmI4YWNiNzA5MjJlZDJjNDVmYzkwM2U5YmNlYSIsInN1YiI6IjY0MTg4MTMxYTE0YmVmMDA3YzZiZWQ5NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HhQbHZqCBndiHhPDFUGc7QP4Q00TowRUZrLO3ui1x14',
+        'Authorization': '',
         'accept': 'application/json'
     };
 
