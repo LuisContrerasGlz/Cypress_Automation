@@ -1,0 +1,10 @@
+instalar cypress 
+    npm install cypress --save-dev
+
+verificar la version instalada 
+    npm cypress --version
+
+abrir el entorno de cypress 
+    npx cypress open
+
+
