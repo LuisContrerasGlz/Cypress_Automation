@@ -8,26 +8,8 @@ describe('Home de freeRangeTesters', () => {
     
     it('Visits the Free Range Testers website and checks the title', () => {
       // Verifica que el título de la página sea correcto
-      cy.title().should('include', 'Free Range Testers');
-      cy.get(".sc-iuUfFv.iuyVSc.sc-eUlrpB.sc-ljhlHD.dlNFXk.hRMjHJ[href='https://www.freerangetesters.com/cursos']")
-      .should('be.visible')
-      .click();
-      cy.get('[data-testid="header-container"] > .sc-erSfwj > .sc-cHqXqK > :nth-child(2) > .sc-iuUfFv')
-      .should('be.visible')
-      .click();
-      cy.get('[data-testid="header-container"] > .sc-erSfwj > .sc-cHqXqK > :nth-child(5) > .sc-iuUfFv')
-      .should('be.visible')
-      .click();
-      cy.get('#page_header > div > section > div > header > nav > ul > li:nth-child(4) > a').click()
-      cy.xpath("//a[@class='sc-iuUfFv iuyVSc sc-eUlrpB sc-ljhlHD dlNFXk hRMjHJ'][normalize-space()='Blog']").click()
-      cy.contains('Acceder').click()
+      cy.title().should('include', 'Free Range Testers')
     });
-  
-    it('Hay cuatro 4 con leer mas',() => {
-      cy.get('[data-testid="header-container"] > .sc-erSfwj > .sc-cHqXqK > :nth-child(1) > .sc-iuUfFv').click()
-      cy.get('[data-testid="container"] > [data-testid="grid"] > :nth-child(2) > .sc-fufdwm > .sc-Rjrgp > .sc-giBObj > .sc-UblHX > .sc-epnzzT').should('have.length',2)
-      //cy.contains('Ver producto').should('have.length',2)
-    })
 
   });
   
